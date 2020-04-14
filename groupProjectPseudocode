@@ -1,0 +1,41 @@
+### Header Pseudocode ###
+Header guards
+class DayOfYear {
+	private
+		int day
+		string month
+	public
+		DayOfYear(int d)
+		void print()
+		string 
+}
+
+Header guard end
+### End of Header Pseudocode ###
+
+### Implementation Pseudocode ###
+include header.h
+include iostream
+
+DayOfYear::DayOfYear(int d){
+	this->day = d
+}
+
+void DayOfYear::print(){
+	int startDayOfMonth[13] = {1,32,60,91,121,152,182,21,244,274,305,335}
+	string month[12] = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }
+	string tempMonth
+	int tempDay
+	for item in startDayOfMonths{
+		if (this->day >= startDayOfMonths[i]) AND (this->day < startDayOfMonths[i+1])
+			tempMonth = month[i]
+			tempDay = (this->day - month[i])
+
+	}
+	if tempDay = 0 {
+		tempDay += 1
+	}
+	std::out tempMonth + tempDay
+}
+
+### END IMPLEMENTATION FILE ###
