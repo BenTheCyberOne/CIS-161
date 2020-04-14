@@ -45,10 +45,6 @@ void DayOfYear::print(){
 			tempDay = (this->day - startDayOfMonth[x]) + 1
 			break
 	}
-	// This is just incase the user enters a date that a month starts at
-	if tempDay = 0 {
-		tempDay += 1
-	}
 	// Using the example we would get February 25
 	std::out << tempMonth << " " << tempDay
 }
