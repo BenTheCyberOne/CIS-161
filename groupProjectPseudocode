@@ -7,7 +7,6 @@ class DayOfYear {
 	public
 		DayOfYear(int d)
 		void print()
-		string 
 }
 
 Header guard end
@@ -26,15 +25,30 @@ void DayOfYear::print(){
 	string month[12] = { "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" }
 	string tempMonth
 	int tempDay
-	for item in startDayOfMonths{
+	
+	/*
+	Here we will check if the day is in between two months. If the day is 
+	lower than the value in the next index but larger than the current one,
+	we will take the current index number (x) and use it to find which month
+	the day corresponds with. For example if the user enters 57, we will use
+	index #1 (32) and see that index #1 within the month[] contains February
+	/*
+	
+	for (int x = 0; x < startDayOfMonth.length(); x++){
 		if (this->day >= startDayOfMonths[i]) AND (this->day < startDayOfMonths[i+1])
 			tempMonth = month[i]
+			/*
+			To calculate the day, we will take the integer given by the user and
+			subtract it with the value we compared with previously
+			Following the example from above, we take 57 - 32 and get 25.
 			tempDay = (this->day - month[i])
 
 	}
+	// This is just incase the user enters a date that a month starts at
 	if tempDay = 0 {
 		tempDay += 1
 	}
+	// Using the example we would get February 25
 	std::out tempMonth + tempDay
 }
 
