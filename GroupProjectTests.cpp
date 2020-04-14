@@ -1,7 +1,6 @@
 #include "Header.h"
 #include <iostream>
 #include <string>
-#include <array>
 using namespace std;
 DayOfYear::DayOfYear(int d) {
 	this->day = d;
@@ -32,10 +31,6 @@ void DayOfYear::print() {
 			tempDay = (this->day - startDayOfMonth[x]) + 1;
 			break;
 		}
-		// This is just incase the user enters a date that a month starts at
-		//if (tempDay == 0) {
-		//	tempDay += 1;
-		//}
 
 	}
 	// Using the example we would get February 25
